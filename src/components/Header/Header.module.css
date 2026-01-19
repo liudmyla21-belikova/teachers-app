@@ -1,0 +1,76 @@
+.header {
+    margin: 0 auto;
+    width: 1440px;
+}
+
+.headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 128px;
+}
+
+.nav {
+    width: 661px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.logo span {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: #121417;
+}
+
+.navBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #121417;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    border: none;
+    background: none;
+}
+
+.auth {
+    display: flex;
+}
+
+.icon {
+    margin-right: 8px;
+}
+
+.reg {
+    background: #121417;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #fff;
+    border-radius: 12px;
+}
+
+.logout {
+    display: flex;
+    align-items: center;
+    border: none;
+    background: none;
+}

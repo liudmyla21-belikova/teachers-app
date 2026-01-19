@@ -1,0 +1,29 @@
+.favouritesContainer {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.noList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 64px;
+  gap: 24px;
+}
+
+.noList p {
+  font-size: 32px;
+}
+
+.link {
+  padding: 12px;
+  background-color: #e0a39a;
+  width: 200px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.link:hover {
+  background-color: #f2c0bd;
+}

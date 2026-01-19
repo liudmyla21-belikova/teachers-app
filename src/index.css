@@ -1,0 +1,114 @@
+:root {
+  --font-main: "Roboto", system-ui, sans-serif;
+
+  --color-text-main: #121417;
+  --color-text-secondary: #6b6f73;
+
+  --color-bg-main: #fff;
+  --color-bg-page: #fff;
+
+  --color-primary: #e0a39a;
+  --color-primary-light: #f2c0bd;
+
+  --color-dark: #121417;
+  --color-border: #e0a39a;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 24px;
+
+  --text-sm: 14px;
+  --text-md: 16px;
+  --text-lg: 20px;
+  --text-xl: 48px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  font-size: var(--text-md);
+  line-height: 1.5;
+  color: var(--color-text-main);
+  background-color: var(--color-bg-page);
+  min-width: 320px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 600;
+  color: var(--color-text-main);
+}
+
+h1 {
+  font-size: var(--text-xl);
+  line-height: 1.2;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  color: var(--color-text-secondary);
+}
+
+a {
+  color: var(--color-text-main);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-family: inherit;
+  font-size: var(--text-md);
+  font-weight: 500;
+  border-radius: var(--radius-md);
+  border: none;
+  cursor: pointer;
+  padding: 14px 32px;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+button.primary {
+  background-color: var(--color-primary);
+  color: var(--color-text-main);
+}
+
+button.primary:hover {
+  background-color: var(--color-primary-light);
+}
+
+button.dark {
+  background-color: var(--color-dark);
+  color: #ffffff;
+}
+
+button.dark:hover {
+  opacity: 0.9;
+}
