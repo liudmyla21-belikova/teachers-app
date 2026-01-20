@@ -4,7 +4,10 @@ import { onAuthStateChanged } from "firebase/auth";
 import { Link } from "react-router-dom";
 import type { Teacher } from "../../types/teacher";
 import { getAllTeachers } from "../../services/teachers";
-import { getFavorites, removeFromFavorites} from "../../services/favoriteTeachers";
+import {
+  getFavorites,
+  removeFromFavorites,
+} from "../../services/favoriteTeachers";
 import { auth } from "../../firebase/firebaseConfig";
 import Loader from "../../components/Loader/Loader";
 import TeacherComponent from "../../components/Teacher/Teacher";
@@ -70,12 +73,12 @@ export default function FavouriteTeachers() {
           </Link>
         </div>
       )}
-      <ul>
+      <ul className={css.list}>
         {teachers.map((teacher) => (
           <li key={teacher.id}>
             <TeacherComponent
               teacher={teacher}
-              selectedLevel="" 
+              selectedLevel=""
               onToggleFavorite={() => deleteFromFavTeachers(teacher.id)}
               isFavorite={true}
             />
